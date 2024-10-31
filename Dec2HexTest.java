@@ -3,7 +3,7 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-class Dec2HexTest {
+public class Dec2HexTest {
 
     @Test
     void testNoArguments() {
