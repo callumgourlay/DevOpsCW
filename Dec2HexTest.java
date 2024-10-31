@@ -6,7 +6,7 @@ import java.io.PrintStream;
 public class Dec2HexTest {
 
     @Test
-    void testNoArguments() {
+    public void testNoArguments() {
         // Redirect the standard error stream to capture error messages
         ByteArrayOutputStream errContent = new ByteArrayOutputStream();
         System.setErr(new PrintStream(errContent));
@@ -19,7 +19,7 @@ public class Dec2HexTest {
     }
 
     @Test
-    void testNonIntegerArgument() {
+    public void testNonIntegerArgument() {
         // Redirect the standard error stream to capture error messages
         ByteArrayOutputStream errContent = new ByteArrayOutputStream();
         System.setErr(new PrintStream(errContent));
@@ -32,7 +32,7 @@ public class Dec2HexTest {
     }
 
     @Test
-    void testValidIntegerArgument() {
+    public void testValidIntegerArgument() {
         // Redirect the standard output stream to capture output messages
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
